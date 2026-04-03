@@ -32,6 +32,14 @@
 }
 
 @layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
   .sticker-shadow {
     box-shadow: 0px 12px 32px rgba(0, 75, 227, 0.12);
   }
